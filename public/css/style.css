@@ -189,7 +189,7 @@ p {
  * Flexslider
  */
 #fh5co-home {
-  min-height: 700px;
+  min-height: 400px;
   background: #fff url(../images/loader.gif) no-repeat center center;
 }
 #fh5co-home .flexslider {
@@ -259,7 +259,7 @@ p {
   bottom: 0;
   left: 0;
   right: 0;
-  opacity: .5;
+  opacity: .1;
   background: #000;
 }
 #fh5co-home .flexslider .flex-control-nav,

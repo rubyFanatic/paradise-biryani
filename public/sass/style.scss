@@ -269,7 +269,7 @@ p {
  * Flexslider
  */
 #fh5co-home {
-	min-height: 700px;
+	min-height: 400px;
 	background: $brand-white url(../images/loader.gif) no-repeat center center;
 
 	.flexslider {
@@ -341,7 +341,7 @@ p {
 			bottom: 0;
 			left: 0;
 			right: 0;
-			opacity: .5;
+			opacity: .1;
 			background: #000;
 			// background: rgba(0, 0, 0, .5);
 		}
