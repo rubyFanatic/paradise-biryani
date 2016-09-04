@@ -38,155 +38,24 @@ html.no-js
       | <script src="js/respond.min.js"></script
   body
     #fh5co-container
-      #fh5co-home.js-fullheight data-section="home"
-        .flexslider
-          .fh5co-overlay
-          .fh5co-text
-            .container
-              .row
-                h1.to-animate
-          ul.slides
-            li data-stellar-background-ratio="0.5" style=("background-image: url(images/slide_1.jpg);")
-            li data-stellar-background-ratio="0.5" style=("background-image: url(images/slide_2.jpg);")
-            li data-stellar-background-ratio="0.5" style=("background-image: url(images/slide_3.jpg);")
-      .js-sticky
-        .fh5co-main-nav
-          .container-fluid
-            .fh5co-menu-1
-              a data-nav-section="home" href="#"  Home
-              a data-nav-section="about" href="#"  About
-              a data-nav-section="features" href="#"  Features
-            .fh5co-logo = image_tag("images.png", :alt => "Paradise Biryani Pointe")
-              a href="index.html"  Paradise
-            .fh5co-menu-2
-              a data-nav-section="menu" href="#"  Menu
-              a data-nav-section="events" href="#"  Events
-              a data-nav-section="reservation" href="#"  Reservation
-              a data-nav-section="phone"
-                i.icon-phone
-                 | (123) 465-6789
+      = render 'pages/slider'
+      = render 'pages/nav'
       #fh5co-about data-section="about"
         .fh5co-2col.fh5co-bg.to-animate-2 style=("background-image: url(images/res_img_1.jpg)")
         .fh5co-2col.fh5co-text
           h2.heading.to-animate About Us
           p.to-animate
             span.firstcharacter> P
-            | aradise Biryani Pointe is the Pioneer and a successful Indian Restaurant Chain in USA knwon for its world class Authentic Hyderabadi Biryani. We   maintain excellence in taste and consistency by its unique recipe and Spice formula perfected over the years.We specialize in crafting mouth-watering food and providing superb customer service. Order online for pickup! We are and will always be with our customers and providing good and fresh foods witch are rich in required nutrients, and good and beneficial for the health of our precious customers.
+            | aradise Biryani Pointe is the Pioneer and a successful Indian Restaurant Chain in USA known for its world class Authentic Hyderabadi Biryani. We   maintain excellence in taste and consistency by its unique recipe and Spice formula perfected over the years.We specialize in crafting mouth-watering food and providing superb customer service. Order online for pickup! We are and will always be with our customers and providing good and fresh foods witch are rich in required nutrients, and good and beneficial for the health of our precious customers.
             p.text-center.to-animate
             a.btn.btn-primary.btn-outline href="#"  Check the Menu
-      #fh5co-sayings
-        .container
-          .row.to-animate
-            .flexslider
-              ul.slides
-                li
-                  blockquote
-                    p &ldquo;Cooking is an art, but all art requires knowing something about the techniques and materials&rdquo;
-                    p.quote-author &mdash; Nathan Myhrvold
-                li
-                  blockquote
-                    p &ldquo;Give a man food, and he can eat for a day. Give a man a job, and he can only eat for 30 minutes on break.&rdquo;
-                    p.quote-author &mdash; Lev L. Spiro
-                li
-                  blockquote
-                    p &ldquo;Find something you’re passionate about and keep tremendously interested in it.&rdquo;
-                    p.quote-author &mdash; Julia Child
-                li
-                  blockquote
-                    p &ldquo;Never work before breakfast; if you have to work before breakfast, eat your breakfast first.&rdquo;
-                    p.quote-author &mdash; Josh Billings
-      #fh5co-featured data-section="features"
-        .container
-          .row.text-center.fh5co-heading.row-padded
-            .col-md-8.col-md-offset-2
-              h2.heading.to-animate Featured Dishes
-              p.sub-heading.to-animate We know the way to your heart. Just allow us to take you on a fantastic food drive!
-          .row
-            .fh5co-grid
-              .fh5co-v-half.to-animate-2
-                .fh5co-v-col-2.fh5co-bg-img style=("background-image: url(images/chicken_biryani.jpeg)")
-                .fh5co-v-col-2.fh5co-text.fh5co-special-1.arrow-left
-                  h2 Chicken Dum Biryani
-                  span.pricing $10.99
-                  p aromatic chicken | basmati rice | garam masala
-              .fh5co-v-half
-                .fh5co-h-row-2.to-animate-2
-                  .fh5co-v-col-2.fh5co-bg-img style=("background-image: url(images/manchurian.jpeg)")
-                  .fh5co-v-col-2.fh5co-text.arrow-left
-                    h2 Chicken Manchurian
-                    span.pricing $9.99
-                    p A traditional Chinese food made Indian way with aromatic spices and flavor.It's the best of both worlds and simply yummylicious
-                .fh5co-h-row-2.fh5co-reversed.to-animate-2
-                  .fh5co-v-col-2.fh5co-bg-img style=("background-image: url(images/res_img_8.jpg)")
-                  .fh5co-v-col-2.fh5co-text.arrow-right
-                    h2 Chicken Tikka
-                    span.pricing $8.99
-                    p Thoroughly marinated meat cubes are cooked and then grilled on a skewer.
-              .fh5co-v-half
-                .fh5co-h-row-2.fh5co-reversed.to-animate-2
-                  .fh5co-v-col-2.fh5co-bg-img style=("background-image: url(images/res_img_7.jpg)")
-                  .fh5co-v-col-2.fh5co-text.arrow-right
-                    h2 Mirchi Ka saalan
-                    span.pricing $7.99
-                    p Long hot peppers cooked in sesame based sauce with garlic, onions and special spices
-                .fh5co-h-row-2.to-animate-2
-                  .fh5co-v-col-2.fh5co-bg-img style=("background-image: url(images/res_img_6.jpg)")
-                  .fh5co-v-col-2.fh5co-text.arrow-left
-                    h2 Paradise Fish Curry
-                    span.pricing $11.99
-                    p Hyderabadi Style Fish curry in special Paradise spice mix
-              .fh5co-v-half.to-animate-2
-                .fh5co-v-col-2.fh5co-bg-img style=("background-image: url(images/res_img_3.jpg)")
-                .fh5co-v-col-2.fh5co-text.fh5co-special-1.arrow-left
-                  h2 Qubani Ka Meetha
-                  span.pricing $5.99
-                  p A creamy delicious sweet made out of dried apricot, dates & rose petals served with ice cream
-      #fh5co-type data-stellar-background-ratio="0.5" style=("background-image: url(images/slide_3.jpg);")
-        .fh5co-overlay
-        .container
-          .row
-            .col-md-3.to-animate
-              .fh5co-type
-                h3.with-icon.icon-1 Appetizers
-            .col-md-3.to-animate
-              .fh5co-type
-                h3.with-icon.icon-2 Chicken
-            .col-md-3.to-animate
-              .fh5co-type
-                h3.with-icon.icon-3 Vegetarian
-            .col-md-3.to-animate
-              .fh5co-type
-                h3.with-icon.icon-4 Juices
-            .col-md-3.to-animate
-              .fh5co-type
-                h3.with-icon.icon-5 Desserts
-            .col-md-3.to-animate
-              .fh5co-type
-                h3.with-icon.icon-6 Sea Food
+      = render "pages/sayings"
+      = render "pages/featured"
       = render "pages/menu"
+      = render "pages/variety"
       //= render "pages/events"
       = render "pages/reservation"
-    #fh5co-footer
-      .container
-        .row.row-padded
-          .col-md-12.text-center
-            p.to-animate
-              | &copy; 2016 Paradise Biryani Pointe
-              br/
-            p.text-center.to-animate
-              a.js-gotop href="#"  Go To Top
-        .row
-          .col-md-12.text-center
-            ul.fh5co-social
-              li.to-animate-2
-                a href="#"
-                  i.icon-facebook
-              li.to-animate-2
-                a href="#"
-                  i.icon-twitter
-              li.to-animate-2
-                a href="#"
-                  i.icon-instagram
+      = render "pages/footer"
     /! jQuery
     script src="js/jquery.min.js"
     /! jQuery Easing
