@@ -1,0 +1,45 @@
+#fh5co-contact data-section="reservation"
+  .container
+    .row.text-center.fh5co-heading.row-padded
+      .col-md-8.col-md-offset-2
+        h2.heading.to-animate Reserve a Table
+        p.sub-heading.to-animate 
+    .row
+      .col-md-6.to-animate-2
+        h3 Contact Info
+        ul.fh5co-contact-info
+          li.fh5co-contact-address
+            i.icon-home
+            | 111 Nashville Dr,
+            br/
+            | Franklin, TN - 37027
+
+          li
+            i.icon-phone
+            | (123) 465-6789
+          li
+            i.icon-envelope
+            | info@tn-paradise.com
+      .col-md-6.to-animate-2
+        h3 Reservation Form
+        .form-group
+          label.sr-only for="name"  Name
+          input#name.form-control placeholder="Name" type="text" /
+        .form-group
+          label.sr-only for="email"  Email
+          input#email.form-control placeholder="Email" type="email" /
+        .form-group
+          label.sr-only for="occation"  Occation
+          select#occation.form-control
+            option Select an Occation
+            option Wedding Ceremony
+            option Birthday
+            option Others
+        .form-group
+          label.sr-only for="date"  Date
+          input#date.form-control placeholder=("Date &amp; Time") type="text" /
+        .form-group
+          label.sr-only for="message"  Message
+          textarea#message.form-control cols="30" name="" placeholder="Message" rows="5"
+        .form-group
+          input.btn.btn-primary type="submit" value=("Send Message") /
