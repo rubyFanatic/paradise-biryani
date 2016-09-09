@@ -8,43 +8,17 @@
         .fh5co-food-menu.to-animate-2
           h2.fh5co-drinks Drinks
           ul
-            li
-              .fh5co-food-desc
-                figure
-                  img.img-responsive alt=("Paradise Biryani Pointe") src="images/res_img_5.jpg" /
-                div
-                  h3 Mango Lassi
-                  p Mango | Yogurt | Milk | Ice Blend
-              .fh5co-food-pricing
-                | $2.49
-            li
-              .fh5co-food-desc
-                figure
-                  img.img-responsive alt=("Paradise Biryani Pointe") src="images/res_img_6.jpg" /
-                div
-                  h3 Soda
-                  p Coke | Sprite | Diet Coke | Thums Up
-              .fh5co-food-pricing
-                | $2.49
-            li
-              .fh5co-food-desc
-                figure
-                  img.img-responsive alt=("Paradise Biryani Pointe") src="images/res_img_7.jpg" /
-                div
-                  h3 South Indian Chai/Tea
-                  p
-              .fh5co-food-pricing
-                | $1.50
-            li
-              .fh5co-food-desc
-                figure
-                  img.img-responsive alt=("Paradise Biryani Pointe") src="images/res_img_5.jpg" /
-                div
-                  h3 South Indian Coffee
-                  p
-              .fh5co-food-pricing
-                | $2.50
-
+           - @menus.each do |menu|
+            - if menu.category.eql? "Drinks"
+              li
+                .fh5co-food-desc
+                  figure
+                    img.img-responsive alt=("Paradise Biryani Pointe") src="images/res_img_5.jpg" /
+                  div
+                    h3 #{menu.item_name}
+                    p #{menu.item_description}
+                .fh5co-food-pricing
+                  | $#{'%.02f' %menu.price}
       .col-md-6
         .fh5co-food-menu.to-animate-2
           h2.fh5co-dishes Chicken

@@ -1,0 +1,21 @@
+p#notice = notice
+
+p
+  strong Category:
+  = @menu.category
+p
+  strong Item name:
+  = @menu.item_name
+p
+  strong Item description:
+  = @menu.item_description
+p
+  strong Price:
+  = @menu.price
+p
+  strong Display priority:
+  = @menu.display_priority
+
+= link_to 'Edit', edit_menu_path(@menu)
+'|
+= link_to 'Back', menus_path
