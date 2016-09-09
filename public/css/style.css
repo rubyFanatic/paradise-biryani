@@ -189,7 +189,7 @@ p {
  * Flexslider
  */
 #fh5co-home {
-  min-height: 400px;
+  min-height: 200px;
   background: #fff url(../images/loader.gif) no-repeat center center;
 }
 #fh5co-home .flexslider {
